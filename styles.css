@@ -49,6 +49,18 @@ section {
   text-align: center;
 }
 
+.contact p {
+  text-align: center; 
+  margin-top: 2rem; 
+  font-size: 0.95rem; 
+  color: #aaa;
+}
+
+.contact a {
+  color: #ccc; 
+  text-decoration: underline;
+}
+
 .form-section {
   margin-top: 2rem;
 }
