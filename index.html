@@ -38,23 +38,27 @@
     </section>
 
     <section class="form-section">
-      <form id="support-form" action="https://script.google.com/macros/s/AKfycbxXoXfp6bnhbDn7FsHvU-65FEEK_y_y8AfPEmpK1UUYMWcN8BmqV0NVaDDKp_zKp01Gtw/exec" method="POST">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSd53uq5IAZnmV8ztAJhQ3rcWQjHhxEKehALDVTHZkDlykXimw/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
         <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        <input name="entry.4093414" id="email" type="email" required placeholder="you@example.com" />
 
         <label for="tier">Support Tier:</label>
-        <select id="tier" name="tier" required>
+        <select name="entry.1397626709" id="tier" required>
           <option value="">-- Choose an option --</option>
-          <option value="4.99">$4.99 – Light Supporter (1 month early access)</option>
-          <option value="14.99">$14.99 – Core Supporter (3 months early access + 25% discount)</option>
-          <option value="49.99">$49.99 – Founding Supporter (Lifetime discount + your name on our Wall of Thanks)</option>
+          <option value="$4.99 – Light Supporter (1 month early access)">$4.99 – Light Supporter (1 month early access)</option>
+          <option value="$14.99 – Core Supporter (3 months early access + 25% discount)">$14.99 – Core Supporter (3 months early access + 25% discount)</option>
+          <option value="$49.99 – Founding Supporter (Lifetime discount + your name on our Wall of Thanks)">$49.99 – Founding Supporter (Lifetime discount + your name on our Wall of Thanks)</option>
         </select>
-
-        <p class="note">No payment will be auto-processed. We’ll contact you personally to complete the pre-order. This helps us measure real interest ❤️
-        </p>
 
         <button type="submit">Join as a Supporter</button>
       </form>
+
+      <iframe name="hidden_iframe" style="display:none;" onload="if(submitted) alert('🎉 Thank you! We’ll be in touch soon.')"></iframe>
+
+      <script>
+        let submitted = false;
+      </script>
+
     </section>
   </div>
   <script src="form-handler.js"></script>
